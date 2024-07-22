@@ -1,0 +1,75 @@
+.MakeaMealBtnContainer {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    align-items: center;
+}
+.MakeaMealBtn {
+    background: linear-gradient(to bottom right, green, rgba(255, 255, 0, 0.686));
+    cursor: pointer;
+    width: 200px;
+    height: 80px;
+    font-size: 28px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    z-index: 2;
+    transition: transform .7s;    
+}
+.MakeaMealBtn:hover {
+    background-color: rgb(255, 255, 161);
+    transform: translateY(4px);
+}
+.MakeaMealBtnBackground {
+    background-color: rgb(41, 54, 69);
+    height: 83px;
+    width: 200px;
+    position: absolute;
+    margin-top: 8px;
+    z-index: 1;
+}
+
+.MakeaMealBtnBackground::before,
+.MakeaMealBtnBackground::after {
+    content: "";
+    position: absolute;
+    inset: 0.1rem;
+    border-radius: 10px;
+    background: conic-gradient(from var(--gradient-angle),green, rgba(255, 255, 0, 0.686), rgba(255, 255, 0, 0.686), green);
+    animation: rotation 3s linear infinite;
+    overflow: visible !important;
+}
+.MakeaMealBtnBackground::after {
+    filter: blur(1.5rem);
+    z-index: -1;
+    
+}
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+@keyframes rotation {
+    0% {
+        --gradient-angle: 0deg;
+
+    }
+    100% {
+        --gradient-angle: 360deg;
+    }
+}
+.MealCard {
+    background: linear-gradient(to bottom right, green, rgba(255, 255, 0, 0.686));;
+    height: 80px;
+    width: 200px;
+    border-radius: 10%;
+    animation: expanded 0.1s linear forwards;
+    color: white;
+    display: flex;
+    border: 1px solid red;
+
+}
