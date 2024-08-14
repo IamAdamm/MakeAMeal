@@ -1,10 +1,17 @@
+
+/* Card */
+
 .MakeaMealBtnContainer {
-    height: 500px;
-    width: 500px;
+    height: 80px;
+    width: 200px;
+    position: absolute;
+    left: calc(50% - 100px);
+    top: calc(50% - 40px);
     display: flex;
     justify-content: center;
     overflow: visible;
     align-items: center;
+    
 }
 .MakeaMealBtn {
     background: linear-gradient(to bottom right, green, rgba(255, 255, 0, 0.686));
@@ -62,14 +69,40 @@
         --gradient-angle: 360deg;
     }
 }
+
+/* Card */
+
 .MealCard {
     background: linear-gradient(to bottom right, green, rgba(255, 255, 0, 0.686));;
     height: 80px;
     width: 200px;
     border-radius: 10%;
-    animation: expanded 0.1s linear forwards;
     color: white;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    visibility: hidden;
+    border: 1px solid purple;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+}
+.sidebar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     border: 1px solid red;
-
+}
+.expand {
+    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.686);
+    height: 80vh;
+    width: 80vh;
+    visibility: visible;
+}
+.hidden {
+    visibility: hidden;
 }
