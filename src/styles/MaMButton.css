@@ -1,5 +1,5 @@
 
-/* Card */
+/* Button */
 
 .MakeaMealBtnContainer {
     height: 80px;
@@ -11,7 +11,6 @@
     justify-content: center;
     overflow: visible;
     align-items: center;
-    
 }
 .MakeaMealBtn {
     background: linear-gradient(to bottom right, green, rgba(255, 255, 0, 0.686));
@@ -79,23 +78,21 @@
     border-radius: 10%;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: all .3s;
     visibility: hidden;
-    border: 1px solid purple;
 }
-.content {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid blue;
+.MealCardTitle {
+    font-size: 2.5em;
+    width: 100%;
+    text-align: center;
+    margin-top: 0%;
 }
-.sidebar {
+.MealCardChildren {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid red;
 }
 .expand {
     box-shadow: 0 0px 10px rgba(255, 255, 255, 0.686);

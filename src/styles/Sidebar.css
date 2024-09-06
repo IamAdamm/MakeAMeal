@@ -1,0 +1,45 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    border-right: 2px solid white;
+    width: 19vh;
+}
+.login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.login h2{
+    border-bottom: 2px solid white;
+    width: 80%;
+    text-align: center;
+}
+.diets {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.diets h2{
+    border-bottom: 2px solid white;
+    width: 80%;
+    text-align: center;
+}
+.allergies {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.allergies h2{
+    border-bottom: 2px solid white;
+    width: 80%;
+    text-align: center;
+}
