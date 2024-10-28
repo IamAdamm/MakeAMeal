@@ -8,4 +8,4 @@ Budget-Friendly: Set a budget and receive meal suggestions that meet your financ
 AI-Powered Suggestions: Leverage AI to receive tailored meal recommendations based on your input.
 Meal Database Integration: The app fetches meal options from an extensive API database, providing a diverse range of choices.
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE file for details
